@@ -1,11 +1,12 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 class Header extends React.Component{
     render(){
         return (
             <React.Fragment>
                 <h1>Header</h1>
-                <div bgcolor="red"> Nav bar</div>
+                <Navbar/>
             </React.Fragment>
         )
     }
