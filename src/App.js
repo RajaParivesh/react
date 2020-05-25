@@ -9,7 +9,7 @@ class App extends Component{
             <React.Fragment>
                 <Header/>
                 {/*<p>This is a Body text</p>*/}
-                {/*<Footer/>*/}
+                <Footer copyright={"Raja Parivesh"} data={"footer data comming from the props"}/>
             </React.Fragment>
         )
     }

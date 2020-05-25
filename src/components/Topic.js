@@ -4,7 +4,7 @@
 //     useParams
 // } from "react-router-dom";
 // function Topic() {
-//     let { topicId } = useParams();
-//     return <h3>Requested topic ID: {topicId}</h3>;
+//     // let { topicId } = useParams();
+//     return <h3>Requested topic ID</h3>;
 // }
 // export default Topic();

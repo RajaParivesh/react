@@ -4,7 +4,8 @@ class Footer extends Component{
     render(){
         return(
             <React.Fragment>
-                This is a Footer
+                {this.props.data}
+                &copy;{this.props.copyright}
             </React.Fragment>
         )
     }

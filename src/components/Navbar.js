@@ -3,7 +3,8 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    useParams
 } from "react-router-dom";
 import App from "../App";
 import About from "./About";
@@ -31,9 +32,12 @@ class Navbar extends Component{
                     {/*<li>*/}
                     {/*    <Link to="/topics"> Topics </Link>*/}
                     {/*</li>*/}
+                    <li>
+                        <Link to="/useParam">Test Route useParam with id</Link>
+                    </li>
 
                 </ul>
-
+                <hr/>
                 <Switch>
                     <Route path="/app">
                         <App/>
@@ -47,6 +51,7 @@ class Navbar extends Component{
                     <Router path="/about">
                         <About/>
                     </Router>
+                    <Route path="/:id" children={<Child/>} />
                     {/*<Router path="/topics">*/}
                     {/*    <Topics/>*/}
                     {/*</Router>*/}
@@ -54,6 +59,14 @@ class Navbar extends Component{
             </Router>
         )
     }
+}
 
+function Child() {
+    let { id } = useParams();
+    return(
+        <div>
+            <h3>ID: {id}</h3>
+        </div>
+    )
 }
 export default Navbar;
