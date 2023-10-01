@@ -5,7 +5,8 @@ class Contact extends Component{
         return(
             <React.Fragment>
                 <div>
-                    This is a Contact form.
+                    <h1>Contact</h1>This is a Contact form.
+                    <form action="post"><input type="text" name="name" id="name" /></form>
                 </div>
             </React.Fragment>
         )

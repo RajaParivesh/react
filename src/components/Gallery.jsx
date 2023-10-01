@@ -4,7 +4,7 @@ class Gallery extends Component{
     render() {
         return(
             <React.Fragment>
-                This is a Gallery
+                <h1>Gallery</h1>This is a Gallery
             </React.Fragment>
         )
     }

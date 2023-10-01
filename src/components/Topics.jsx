@@ -2,7 +2,7 @@
 // import {
 //     BrowserRouter as Router,
 //     Switch,
-//     Link,
+//     NavLink,
 //     Route,
 //     useRouteMatch,
 //     useParams
@@ -19,12 +19,12 @@
 //
 //             <ul>
 //                 <li>
-//                     <Link to={`${match.url}/components`}>Components</Link>
+//                     <NavLink to={`${match.url}/components`}>Components</NavLink>
 //                 </li>
 //                 <li>
-//                     <Link to={`${match.url}/props-v-state`}>
+//                     <NavLink to={`${match.url}/props-v-state`}>
 //                         Props v. State
-//                     </Link>
+//                     </NavLink>
 //                 </li>
 //             </ul>
 //
