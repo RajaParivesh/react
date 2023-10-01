@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
 import './App.css';
 import Header from './components/Header';
+import Home from './components/Home';
 import Footer from './components/Footer';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery"
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 class App extends Component{
     render() {
         return (
-            <React.Fragment>
+            <BrowserRouter>
                 <Header/>
-                {/*<p>This is a Body text</p>*/}
-                <Footer copyright={"Raja Parivesh"} data={"footer data comming from the props"}/>
-            </React.Fragment>
+                <Routes>
+                    <Route path="/" element={<Home />} /> 
+                    <Route path="/about" element={<About />} /> 
+                    <Route path="/gallery" element={<Gallery />} /> 
+                    <Route path="contact" element={<Contact />} />
+                </Routes>
+                <Footer copyright={"Raja Parivesh"} data={"Footer data comming from the props "}/>
+            </BrowserRouter>
         )
     }
 }

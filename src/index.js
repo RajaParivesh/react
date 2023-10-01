@@ -3,21 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Gallery from "./components/Gallery"
-import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
-        <App/>
-        <Routes>
-            <Route path="/about" element={<About />} /> 
-            <Route path="/gallery" element={<Gallery />} /> 
-            <Route path="contact" element={<Contact />} />
-        </Routes>
-    </BrowserRouter>
+    <React.Fragment>
+        <App/> 
+    </React.Fragment>
+
 )
 
 // If you want your app to work offline and load faster, you can change

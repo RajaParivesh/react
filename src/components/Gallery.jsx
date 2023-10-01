@@ -1,13 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 
-class Gallery extends Component{
-    render() {
-        return(
-            <React.Fragment>
-                <h1>Gallery</h1>This is a Gallery
-            </React.Fragment>
-        )
-    }
+const gallery = () =>{ 
+    return(
+        <React.Fragment>
+            <h1>Gallery</h1>This is a Gallery
+        </React.Fragment>
+    )
 }
 
-export default Gallery;
+export default gallery;
